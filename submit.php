@@ -23,7 +23,7 @@ try {
 }
 
 // Check if the form was submitted
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+if ($_SERVER['PHP_SELF'] === 'POST') {
     // Retrieve and sanitize form data
     $fullName    = trim($_POST['fullName']);
     $school      = trim($_POST['school']);
